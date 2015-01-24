@@ -2,9 +2,8 @@
 
 [Source](http://www.cdc.gov/nchs/data_access/VitalStatsOnline.htm)
 
-More info coming soon.
 
-## Set and install
+## Setup and install
 
 ```
 install.packages("devtools")
@@ -24,7 +23,7 @@ hist(birthPS$MAGER)
 
 ## Complications
 
-The larger data set is to large to store in a github repository in a single file. It is also to big for the 'moving datasets to lazyload DB' portion of building an R package. Storing it in a csv file is also a little clunky. The best way to work with this dataset is via an iport function. Have a function to load the data from the web into your workspace.
+The larger dataset is too large to store in a github repository in a single file. It is also to big for the 'moving datasets to lazyload DB' portion of building an R package to include it. Storing it in a csv file is also a little clunky becuse it the size explodes by two orders of magnitude. The best way to work with this dataset is via an import function. Below you can see how to use the function to load the data from the web into your workspace.
 
 ```
 # This will take a minute
