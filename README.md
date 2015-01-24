@@ -14,7 +14,7 @@ library(Natality)
 ## Plotting the data
 
 ```
-data(birthPS)
+head(birthPS)
 # Histogram of mother's age
 hist(birthPS$MAGER)
 ```
