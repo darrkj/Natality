@@ -11,6 +11,15 @@ devtools::install_github("darrkj/Natality")
 library(Natality)
 ```
 
+## Read source file
+
+```
+ps_data <- import('Nat2013PublicPS.r20141016')
+
+```
+
+
+
 ## Plotting the data
 
 ```
