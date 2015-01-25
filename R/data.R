@@ -5,3 +5,9 @@
 #' @usage data(birthPS)
 NULL
 
+#' @name definitions
+#' @title definitions
+#' @description The names and slots in the raw text file
+#' @docType data
+#' @usage data(definitions)
+NULL
