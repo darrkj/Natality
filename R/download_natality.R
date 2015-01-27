@@ -38,7 +38,7 @@ download_natality <- function(type) {
   unzip(file, exdir = dir)
   
   # The list of unzipped files.
-  fileList <- list.files(dir)
+  fileList <- grep(type, list.files(dir), ignore.case = TRUE, value = TRUE)
   
   # Full location to the files.
   paste(dir, fileList, sep = "/")
