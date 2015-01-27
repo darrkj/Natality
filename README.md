@@ -49,4 +49,14 @@ import_birth(2)
 write.csv(birthUS1, file = 'file.csv')
 ```
 
+## Read other years of data
 
+```
+download_natality('ps', 2013)
+p13 <- import("zips/Nat2013PublicPS.r20141016")
+mean(as.numeric(p13$MAGER))
+
+download_natality('ps', 2012)
+p12 <- import("zips/Nat2012PublicPS.r20140107")
+mean(as.numeric(p12$MAGER))
+```

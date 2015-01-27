@@ -8,6 +8,8 @@ download_natality(type)
 }
 \arguments{
 \item{type}{Either ps or us}
+
+\item{year}{The year of the data you want to pull}
 }
 \description{
 Pull the file from the cdc website
