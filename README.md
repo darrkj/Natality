@@ -62,3 +62,19 @@ p12 <- import("zips/Nat2012PublicPS.r20140107")
 mean(as.numeric(p12$MAGER))
 # 25.70445
 ```
+
+
+## Read Mortality data
+
+```r
+csvFile <- download_mortality(2008)
+# 'mort2008.csv'
+
+data <- read.csv(csvFile)
+
+csvFile <- download_mortality(2011)
+# "mort2011.csv.zip"     "mortterr2011.csv.zip"
+
+data <- read.csv(csvFile[1])
+```
+
